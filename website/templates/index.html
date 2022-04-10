@@ -1,0 +1,14 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %}
+{% if username %}
+<h1>{{ username }}さんようこそ！</h1>
+{% else %}
+<h1>匿名希望さんようこそ！</h1>
+{% endif %}
+
+<p class="top_img">
+    <img src="{% static 'usako.jpg' %}" />
+</p>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'main.css' %}">
+        {% block title %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="/">ホーム</a>
+            <a href="/about">自己紹介</a>
+        </div>
+        {% block content %}
+        {% endblock %}
+        
+        <p>Copyright 2022-4 ~ {% now "Y-m" %}</p>
+    </body>
+</html>
+
